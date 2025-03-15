@@ -26,7 +26,7 @@ $(".scroll-up-btn").click(function () {
 
 //  typing animation script
 var typed = new Typed(".typing", {
-  strings: ["SE Undergraduate", "Full Stack Dev", "Photographer"],
+  strings: ["Software Engineer", "Full Stack Developer", "Photographer"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true,
