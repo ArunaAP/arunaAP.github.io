@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;500;600;700&family=Shadows+Into+Light&family=Tapestry&family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;500;600;700&family=Shadows+Into+Light&family=Tapestry&family=Ubuntu:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -7,6 +7,9 @@
   text-decoration: none;
 }
 html {
+  scroll-behavior: smooth;
+}
+body {
   scroll-behavior: smooth;
 }
 
@@ -22,7 +25,7 @@ html {
   width: 100%;
   padding: 30px 0;
   z-index: 999;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 
   transition: all 0.3s ease;
 }
@@ -94,12 +97,12 @@ html {
 /* home section */
 .home {
   display: flex;
-  background: url('images/banner.jpg') no-repeat center;
+  background: url("images/banner.jpg") no-repeat center;
   background: #111;
   height: 100vh;
   color: #fff;
   min-height: 500px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .home .max-width {
@@ -175,22 +178,22 @@ section .title {
   font-size: 40px;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .about {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .service {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .skills {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .contact {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .footer {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .about .about-content,
@@ -205,7 +208,7 @@ section .title {
 }
 
 section .title::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0px;
   left: 50%;
@@ -231,7 +234,7 @@ section {
 }
 
 .about .title::after {
-  content: 'Who i am';
+  content: "Who i am";
 }
 
 .about .about-content .left {
@@ -308,7 +311,7 @@ section {
 }
 
 .service .service-content .right1 {
-  width: 55%;
+  width: 60%;
 }
 .service .service-content .right1 .text {
   font-size: 30px;
@@ -330,7 +333,7 @@ section {
 }
 
 .service .service-content .left2 {
-  width: 55%;
+  width: 60%;
 }
 .service .service-content .left2 .text {
   font-size: 30px;
@@ -353,7 +356,7 @@ section {
 }
 .service .title::after {
   background: #111;
-  content: 'What i do';
+  content: "What i do";
 }
 .service .service-content .card {
   width: calc(33% - 20px);
@@ -365,7 +368,7 @@ section {
   transition: all 0.3s ease;
 }
 .service .title {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .service .service-content .card .box {
   transition: all 0.3s ease;
@@ -392,7 +395,7 @@ section {
 
 /* Skill section */
 .skills .title::after {
-  content: 'what i know';
+  content: "what i know";
 }
 
 .skills .skill-content .column {
@@ -443,7 +446,7 @@ section {
   position: relative;
 }
 .skills .skill-content .right .line::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   left: 0;
@@ -468,7 +471,7 @@ section {
 
 /* contact section styling */
 .contact .title::after {
-  content: 'get in touch';
+  content: "get in touch";
 }
 
 .contact .contact-content .column {
@@ -533,7 +536,7 @@ section {
   outline: none;
   padding: 0 15px;
   font-size: 17px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .contact .right form .textarea textarea {
   padding-top: 10px;
@@ -597,7 +600,7 @@ footer span a:hover {
     z-index: 999;
   }
   .menu-btn i.active:before {
-    content: '\f00d';
+    content: "\f00d";
   }
 
   .navbar .menu {
@@ -747,4 +750,112 @@ footer span a:hover {
   .images:hover .my_photo {
     left: 48%;
   }
+}
+
+/* Add styles for certifications section */
+.certifications {
+  padding: 100px 0; /* Adjust as needed */
+  background: #f8f8f8;
+}
+
+.certifications .title {
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.max-width {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto; /* Center align .certifications-content */
+}
+
+.certifications .certifications-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.certifications .certificate {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.certifications .certificate img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.certifications .certificate h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.certifications .certificate p {
+  margin-top: 5px;
+  font-size: 1em;
+  color: #666;
+}
+
+.certifications .certificate a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.certifications .certificate a:hover {
+  color: #007bff;
+}
+
+/* Add styles for CV section */
+.cv {
+  padding: 100px 0;
+}
+.cv .title {
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.cv .cv-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2px;
+}
+.cv .cv-content .column {
+  flex: 1;
+}
+.cv .cv-content .left img {
+  width: 100%;
+  max-width: 350px; /* Adjust the max width as needed */
+  height: auto;
+  margin-left: 200px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+    /* Horizontal and vertical offsets, blur radius, color */ 0 6px 20px
+      rgba(0, 0, 0, 0.1); /* Larger shadow for more depth */
+}
+.cv .cv-content .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20%;
+  align-items: center;
+}
+.cv .cv-content .right a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.cv .cv-content .right a:hover {
+  background: #555;
 }
